@@ -36,7 +36,7 @@ La estructura del módulo de aplicación de un proyecto **Android** se observa e
 
 El directorio de recursos **(res)** contiene subdirectorios que almacenan los componentes de la interfaz gráfica de la aplicación, archivos y recursos multimedia. El sistema crea referencias para los archivos guardados en el directorio **res** en el archivo **R.java** en el directorio **build**, este archivo es generado automáticamente por el sistema y no debe ser modificado.
 
-##Archivo Manifiaesto
+##Archivo Manifiesto
 
 Antes de instalarse y ejecutarse una aplicación el sistema debe conocer los componentes de aplicación que existen buscando su declaración en el archivo **AndroidManifest.xml**.
 
