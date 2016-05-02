@@ -1,4 +1,4 @@
-#Introducción a las aplicaciones Android
+# Introducción a las aplicaciones Android
 
 Las aplicaciones **Android** se desarrollan en el lenguaje de programación **Java** utilizando el **SDK**,  algunos componentes de código pueden ser desarrollado en **C**, solo recomendado si es necesario mayor consumo de recursos y uso intensivo del procesador. Las interfaces gráficas pueden ser desarrolladas en el lenguaje de marcado **XML**. 
 
@@ -16,7 +16,7 @@ Están definidos cuatro (4) componentes básicos para las aplicaciones **Android
 
 ***
 
-Todos los componentes básicos de la aplicación deben ser declarados en el [archivo de manifiesto]()
+Todos los componentes básicos de la aplicación deben ser declarados en el [archivo de manifiesto]()las versiones más antiguas del **Android SDK** y el IDE Eclipse con el plugin ADT, requerian el desarrollo de esta tarea manualmente, es decir, cada vez que se creaba un componente, se debia editar el archivo manifiesto para incluirlo. Las nuevas versiones del SDK y Android Studio han automatizado este proceso.
 
 ##Estructura de un proyecto Android
 
@@ -35,6 +35,9 @@ La estructura del módulo de aplicación de un proyecto **Android** se observa e
 ![](estructura.png)
 
 El directorio de recursos **(res)** contiene subdirectorios que almacenan los componentes de la interfaz gráfica de la aplicación, archivos y recursos multimedia. El sistema crea referencias para los archivos guardados en el directorio **res** en el archivo **R.java** en el directorio **build**, este archivo es generado automáticamente por el sistema y no debe ser modificado.
+El archivo __R.java__ es una **clase** java, cada uno de los subdirectorios dentro del directorio **res** genera una clase estática final interna a la clase R, y a los archivos dentro del subdirectorio les es generado un identificador estático entero. El identificador sirve para hacer referencia a los recursos en el código java de la aplicación. En la figura siguiente se presenta un ejemplo del identificador generado por el sistema para los recursos del tipo **animator** cargados para un proyecto en particular.
+
+!['Referencia generada a un recurso en el archivo R.java'](rjava_animator.png)
 
 ##Archivo Manifiesto
 
